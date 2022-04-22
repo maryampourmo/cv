@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <h1>Contact Info:</h1>
+    <ol>
+      <li><ins>Phone:</ins> +4917659438255</li>
+      <li><ins>Email:</ins> mpourmotamed@yahoo.com</li>
+      <li><a href="https://www.linkedin.com/in/maryam-pourmotamed/">LinkedIn</a></li>
+    </ol>
+
+<!-- To create a form in the contact me page, start with form and we keep the
+values as they are. then label shows the text and in this case Your Name and
+input will create a box, where the user is able to input their info. To add the
+sumbit button, you use the same <input> but in the type you write submit.
+DO NOT FORGET TO PUT FORM BEFORE CREATING ONE. The action in the form line
+takes to the next stage. in this case on your home page. For instance
+we can add mailto as the action so it opens the mail app and you can type Your
+email and send it out. to make the pop up email look nicers, need to remore the
+class inthe form and add enctype, so the text is plain. in the inputs we need to
+add the name values.now when you submit the form, in the pop up Message
+you can see the name info and the inputted values from the user.-->
+
+<hr>
+
+<form action="mailto:mpourmotamed@yahoo.com" method="post" enctype="text/plain">
+  <label> Your Name: </label>
+  <input type="text" name="yourName" value=""> <br>
+  <label> Your Email: </label>
+  <input type="email" name="yourEmail" value=""> <br>
+  <label> Your Message:</label> <br>
+  <textarea name="yourMessage" rows="10" cols="30"></textarea> <br>
+  <input type="submit" name="">
+</form>
+
+  </body>
+</html>
